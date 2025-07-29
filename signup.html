@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EduMaster</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Edu</span>Master
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="team.html">Team</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html" class="login">Login</a>
+                    <a href="signup.html" class="signup btn">Sign Up</a>
+                    <a href="index.html" class="logout btn hidden" id="logoutBtn">Log Out</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sign Up Form -->
+    <main class="section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-title">
+                    <h2>Create Your Account</h2>
+                    <p>Join thousands of students learning with EduMaster</p>
+                </div>
+
+                <form class="auth-form" onsubmit="return signup()">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                        <span id="username-error" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span id="email-error" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <span id="password-error" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span id="confirm-password-error" class="error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
+
+                <div class="divider">or</div>
+
+                <div class="social-login">
+                    <a href="https://accounts.google.com/o/oauth2/v2/auth">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i> Login with Google
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/v12.0/dialog/oauth">
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Login with Facebook
+                        </button>
+                    </a>
+                </div>
+
+                <div class="auth-switch">
+                    <p>Already have an account? <a href="login.html">Log in instead</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 EduMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="common.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

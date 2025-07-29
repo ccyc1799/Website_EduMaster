@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMaster - Premium Online Learning Platform</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Edu</span>Master
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="team.html">Team</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html" class="login">Login</a>
+                    <a href="signup.html" class="signup btn">Sign Up</a>
+                    <a href="index.html" class="logout btn hidden" id="logoutBtn">Log Out</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Transform Your Career With Online Learning</h1>
+            <p>Gain job-ready skills with our expert-led courses. Learn at your own pace and get certified in today's most in-demand fields.</p>
+            <div class="hero-buttons">
+                <a href="signup.html" class="btn btn-secondary signup">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </a>
+                <a href="courses.html" class="btn btn-outline">
+                    <i class="fas fa-search"></i> Browse Courses
+                </a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="number">25K+</div>
+                    <div class="label">Students Enrolled</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">800+</div>
+                    <div class="label">Courses Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">95%</div>
+                    <div class="label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Learn With EduMaster?</h2>
+                <p>We provide the best online learning experience with features designed to help you succeed</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Career-Focused</h3>
+                    <p>Our curriculum is designed with input from industry leaders...</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from professionals with real-world experience...</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-user-clock"></i></div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study when it suits you with 24/7 access...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Learning Paths Section -->
+    <section class="section section-bg-lighter">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Learning Paths</h2>
+                <p>Start your journey with our most popular career paths</p>
+            </div>
+            <div class="path-cards">
+                <div class="path-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development">
+                    <div class="path-card-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Master HTML, CSS, JavaScript, React, Node.js and build complex web applications.</p>
+                        <a href="courses.html#web-courses" class="path-card-link">
+                            Explore<i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="path-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Data Science">
+                    <div class="path-card-content">
+                        <h3>Data Science & AI</h3>
+                        <p>Learn to collect, process, and analyze data. Build intelligent systems using machine learning and real-world datasets.</p>
+                        <a href="courses.html#data-courses" class="path-card-link">
+                            Explore<i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="path-card">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Digital Marketing">
+                    <div class="path-card-content">
+                        <h3>Mobile Development</h3>
+                        <p>Build mobile apps for Android and iOS using technologies like Kotlin, Swift, Flutter, and React Native.</p>
+                        <a href="courses.html#mobile-courses" class="path-card-link">
+                            Explore<i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="section">
+        <div class="container">
+            <div class="certification">
+                <div class="certification-image">
+                    <img src="../images/certificate.png" alt="Course Certificate">
+                </div>
+                <div class="certification-content">
+                    <h2>Industry-Recognized Certification</h2>
+                    <p>EduMaster certificates are valued by employers worldwide. Our rigorous assessments ensure you truly master the material, not just complete the course.</p>
+                    
+                    <div class="percentage-container">
+                        <div class="percentage">92%</div>
+                        <div class="percentage-label">of hiring managers say an EduMaster certification makes candidates more attractive</div>
+                    </div>
+                    
+                    <div class="certification-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Verifiable digital credentials you can share on LinkedIn</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Skills validation through practical projects</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Direct pathway to career opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p class="quote">"The web development course completely transformed my career. I went from working retail to landing a developer job in just 6 months!"</p>
+                    <p class="author">- Sarah K., Junior Developer</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"The instructors explain complex topics in such an accessible way. I've taken many online courses, but EduMaster stands above the rest."</p>
+                    <p class="author">- Michael T., Data Analyst</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"Thanks to my EduMaster certification, I was able to negotiate a 30% salary increase at my current job."</p>
+                    <p class="author">- Priya M., Marketing Manager</p>
+                </div>
+            </div>
+        </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our platform</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I choose the right course for me?</div>
+                    <div class="faq-answer">
+                        <p>We offer career path recommendations based on your goals and experience level. You can take our quick assessment quiz or speak with one of our learning advisors to find the perfect course match for your career aspirations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I get a refund if I'm not satisfied?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 30-day money-back guarantee for all our paid courses. If you're not completely satisfied with your learning experience, you can request a full refund within 30 days of purchase, no questions asked.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long do I have access to my courses?
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll have lifetime access to all course materials for any course you purchase. This includes all future updates to the course content at no additional cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do employers view EduMaster certificates?
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our certificates are highly regarded by employers. In a recent survey, 92% of hiring managers said they value EduMaster certifications when evaluating candidates. Our certificates verify real skills through practical projects, not just course completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Join over 25,000 students who have transformed their careers with EduMaster. Begin your free trial today with no commitment.</p>
+                <div class="cta-buttons">
+                    <a href="signup.html" class="btn btn-secondary signup">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                    <a href="courses.html" class="btn btn-outline">
+                        <i class="fas fa-search"></i> Browse Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 EduMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="common.js"></script>
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            // Only allow 1 faq open at a time
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) otherItem.classList.remove('active');
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

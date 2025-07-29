@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduMaster</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="courses.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Edu</span>Master
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="courses.html" class="active">Courses</a>
+                    <a href="team.html">Team</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html" class="login">Login</a>
+                    <a href="signup.html" class="signup btn">Sign Up</a>
+                    <a href="index.html" class="logout btn hidden" id="logoutBtn">Log Out</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Explore Our Courses</h1>
+            <p>Discover the perfect learning path with our expert-led courses designed for your success</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Comprehensive Curriculum</h2>
+                <p>Choose from our wide range of courses to boost your career</p>
+            </div>
+            <div class="courses-container">
+
+                <!-- Web Development Courses -->
+                <div class="course-category" id="web-courses">
+                    <div class="category-header">
+                        <h2><i class="fas fa-code"></i> Web Development</h2>
+                    </div>
+                    <div class="courses-grid">
+                        <!-- Web - Course 1 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Responsive Web Design.webp" alt="Responsive Web Design">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Responsive Web Design</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 120 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 15 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/brandon.png" alt="Brandon Lee" class="instructor-avatar">
+                                    <span>Brandon Lee</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(1,245)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM89.99 <span class="original">RM199.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Web - Course 2 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/React Masterclass.png" alt="React Masterclass">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">React Masterclass</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 80 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 10 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/brandon.png" alt="Brandon Lee" class="instructor-avatar">
+                                    <span>Brandon Lee</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(892)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM74.99 <span class="original">RM149.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Web - Course 3 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Node.js Fundamentals.png" alt="Node.js Fundamentals">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Node.js Fundamentals</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 60 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 8 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/yenching.jpg" alt="Yen Ching" class="instructor-avatar">
+                                    <span>Yen Ching</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(568)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM59.99 <span class="original">RM129.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Web - Course 4 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Express.js Basics.jpg" alt="Express.js Basics">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Express.js Basics</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 90 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 11 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/yenching.jpg" alt="Yen Ching" class="instructor-avatar">
+                                    <span>Yen Ching</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(468)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM74.99 <span class="original">RM149.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Web - Course 5 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Rest APIs.jpg" alt="Rest APIs">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Rest APIs</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 65 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 9 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/yenching.jpg" alt="Yen Ching" class="instructor-avatar">
+                                    <span>Yen Ching</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(172)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM44.99 <span class="original">RM109.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Science Courses -->
+                <div class="course-category" id="data-courses">
+                    <div class="category-header">
+                        <h2><i class="fa-solid fa-robot"></i> Data Science & AI</h2>
+                    </div>
+                    <div class="courses-grid">
+                        <!-- Data - Course 1 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Machine Learning.webp" alt="Machine Learning">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Machine Learning</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 150 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 20 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/colin.jpg" alt="Colin Leong" class="instructor-avatar">
+                                    <span>Colin Leong</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(956)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM99.99 <span class="original">RM249.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Data - Course 2 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/TensorFlow for Beginners.webp" alt="TensorFlow for Beginners">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">TensorFlow for Beginners</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 50 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 9 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/colin.jpg" alt="Colin Leong" class="instructor-avatar">
+                                    <span>Colin Leong</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(301)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM69.99 <span class="original">RM119.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Data - Course 3 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Python for Data Science.jpeg" alt="Python for Data Science">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Python for Data Science</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 70 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 10 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/colin.jpg" alt="Colin Leong" class="instructor-avatar">
+                                    <span>Colin Leong</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(1,045)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM69.99 <span class="original">RM129.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Development Courses -->
+                <div class="course-category" id="mobile-courses">
+                    <div class="category-header">
+                        <h2><i class="fa-solid fa-mobile-screen"></i> Mobile Development</h2>
+                    </div>
+                    <div class="courses-grid">
+                        <!-- Mobile - Course 1 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Android Basics.png" alt="Android Basics">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Android Basics</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 60 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 8 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/damien.png" alt="Damien Yee" class="instructor-avatar">
+                                    <span>Damien Yee</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(1,102)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM59.99 <span class="original">RM149.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mobile - Course 2 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Java Fundamentals.jpg" alt="Java Fundamentals">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Java Fundamentals</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 90 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 12 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/damien.png" alt="Damien Yee" class="instructor-avatar">
+                                    <span>Damien Yee</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(723)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM79.99 <span class="original">RM179.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile - Course 3 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/iOS Swift.jpg" alt="iOS Swift">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">iOS Swift</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 50 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 7 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/lixian.png" alt="Li Xian" class="instructor-avatar">
+                                    <span>Li Xian</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(845)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM49.99 <span class="original">RM129.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile - Course 4 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/React Native.jpg" alt="React Native">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">React Native</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 40 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 6 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/lixian.png" alt="Li Xian" class="instructor-avatar">
+                                    <span>Li Xian</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(732)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM44.99 <span class="original">RM99.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mobile - Course 5 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Flutter Bootcamp.png" alt="Flutter Bootcamp">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Flutter Bootcamp</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 90 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 12 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/lixian.png" alt="Li Xian" class="instructor-avatar">
+                                    <span>Li Xian</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(723)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM59.99 <span class="original">RM179.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mobile - Course 6 -->
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="images/courses/Kotlin for Java Developers.jpg" alt="Kotlin for Java Developers">
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Kotlin for Java Developers</h3>
+                                <div class="course-meta">
+                                    <span><i class="far fa-clock"></i> 120 Hours</span>
+                                    <span><i class="fas fa-book-open"></i> 15 Modules</span>
+                                </div>
+                                <div class="course-instructor">
+                                    <img src="images/profiles/damien.png" alt="Damien Yee" class="instructor-avatar">
+                                    <span>Damien Yee</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(1,024)</span>
+                                </div>
+                                <div class="course-price">
+                                    RM129.99 <span class="original">RM200.99</span>
+                                </div>
+                                <button class="btn btn-primary btn-full-width">
+                                    <i class="fas fa-shopping-cart"></i> Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 EduMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="common.js"></script>
+</body>
+</html>
